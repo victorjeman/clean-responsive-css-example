@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: #f9fafb;
+}
+
+.c-page-heading {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.c-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.c-thumbnail {
+  border: 1px solid #e5eaf0;
+  padding: 1.2rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.c-thumbnail__img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.c-thumbnail__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #737f8b;
+}
+
+/* Small (Phones) */
+@media screen and (max-width: 749px) {
+  .c-page-heading {
+    margin-top: 2.8rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .c-thumbnail {
+    margin-bottom: 1rem;
+  }
+
+  .c-thumbnail__title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Medium & Big (Tablet & Desktop) */
+@media screen and (min-width: 750px) {
+  .c-page-heading {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+  }
+
+  .c-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .c-thumbnail {
+    width: 32%;
+  }
+
+  .c-thumbnail__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+}
