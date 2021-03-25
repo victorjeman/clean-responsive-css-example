@@ -1,25 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  background-color: #f9fafb;
-}
-
 .c-page-heading {
-  text-align: center;
   font-family: 'Merriweather', serif;
+  text-align: center;
+  color: #474545;
 
   /* mobile */
   margin-top: 2.8rem;
@@ -28,7 +10,7 @@ body {
 }
 
 .c-container {
-  max-width: 1150px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -51,8 +33,10 @@ body {
 }
 
 .c-thumbnail__title {
+  font-weight: 500;
+
   /* mobile */
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -62,7 +46,7 @@ body {
   color: #737f8b;
 }
 
-/* Medium & Big (Tablet & Desktop) */
+/* medium & big (tablet & desktop) */
 @media screen and (min-width: 750px) {
   .c-page-heading {
     /* override mobile */
@@ -72,11 +56,13 @@ body {
   }
 
   .c-container {
+    /* extra for mobile */
     display: flex;
     justify-content: space-between;
   }
 
   .c-thumbnail {
+    /* extra for desktop */
     width: 32%;
 
     /* override mobile */
