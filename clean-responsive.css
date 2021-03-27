@@ -79,3 +79,38 @@
     margin-bottom: 0.6rem;
   }
 }
+
+/* extra example with multiple media queries */
+
+/* general */
+.c-great-day {
+  font-size: 1.1rem;
+}
+
+/* xsmall */
+@media screen and (max-width: 499px) {
+  .c-great-day {
+    color: #ff0181;
+  }
+}
+
+/* small */
+@media screen and (min-width: 500px) and (max-width: 749px) {
+  .c-great-day {
+    color: #ffbe00;
+  }
+}
+
+/* medium */
+@media screen and (min-width: 750px) and (max-width: 1149px) {
+  .c-great-day {
+    color: #ff3243;
+  }
+}
+
+/* large */
+@media screen and (min-width: 1150px) and (max-width: 1449px) {
+  .c-great-day {
+    color: #324aff;
+  }
+}
